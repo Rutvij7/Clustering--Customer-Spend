@@ -41,3 +41,5 @@ clust.profile = data.frame(cluster = avg[,1],
                            freq = as.vector(table(customer$cluster)),
                            avg[,-1])
 View(clust.profile)
+write.table(clust.profile,file = 'Cust_Spend_Output_table.csv', sep = ',')
+
